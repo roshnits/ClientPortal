@@ -1,0 +1,474 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="/bower_components/bootswatch/flatly/bootstrap.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/resources/css/timeline.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery-ui/jquery-ui.js"></script>
+
+    <style>
+    .sortable {
+      list-style-type: none;
+      padding: 0;
+      margin:0;
+      }
+      ul{
+        min-width:100px;
+        min-height:100px;
+        }
+      .ui-sortable-placeholder{
+        width:auto;
+        height:100px;
+        border:1px dashed gray;
+        visibility: visible !important;
+            }
+        </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-static-top bg-primary">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <label><span class="glyphicon glyphicon-picture"></span> FastTax Portal</label>
+            </div>
+            <div class="nav navbar-brand navbar-right">
+                <div class="btn-sm" href="#"><i class="fa fa-user-circle"></i>&nbsp;Peter</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <!-- left container-->
+            <div class="col-md-3 col-md-3 col-md-12">
+              <ul class="sortable connectedSortable">
+                <!-- start of billing summary-->
+                <li class="ui-state-default">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><b>Billing Summary</b></div>
+                    <div class="panel-body">
+                      <div class="row">
+                          <div class="col-sm-6"><b>Total Billed</b>
+                          </div>
+                          <div class="col-sm-6">$1600.00
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-6"><b>Paid</b>
+                          </div>
+                          <div class="col-sm-6">$1000.00
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-6"><b>Balance</b>
+                          </div>
+                          <div class="col-sm-6">$600.00
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-6"><b>Due</b>
+                          </div>
+                          <div class="col-sm-6">$0.00
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </li>
+              <!-- end of billing summary-->
+              <!-- start of payment-->
+              <li class="ui-state-default">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><b>Payments</b></div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12"><b>Next Scheduled Payment</b>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">11/20/2016
+                            </div>
+                            <div class="col-sm-6">$200.00
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12"><b>Past Payments</b>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">11/20/2016
+                            </div>
+                            <div class="col-sm-6">$200.00
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">11/20/2016
+                            </div>
+                            <div class="col-sm-6">$200.00
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">11/20/2016
+                            </div>
+                            <div class="col-sm-6">$200.00
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">11/20/2016
+                            </div>
+                            <div class="col-sm-6">$200.00
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">11/20/2016
+                            </div>
+                            <div class="col-sm-6">$200.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button type="=button" class="btn btn-success btn-xs"><span class="fa fa-credit-card"></span>&nbsp;Payment Method</button>
+                    </div>
+                </div>
+              </li>
+              <!-- end of payment-->
+              <!-- start of document-->
+                <li class="ui-state-default">
+                  <div class="panel panel-primary">
+                      <div class="panel-heading"><b>Documents</b></div>
+                      <div class="panel-body">
+                          <div class="row">
+                              <div class="col-sm-12"><i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;Doc 1
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-12"><i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;Doc 2
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-12"><i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;Doc 3
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel-footer">
+                          <button type="=button" class="btn btn-success btn-xs"><i class="fa fa-upload"></i>&nbsp;Upload</button>
+                      </div>
+                  </div>
+                </li>
+                <!-- end of document-->
+              </ul>
+            </div>
+
+            <!-- middle container-->
+            <div class="col-md-6 col-md-12">
+              <!-- start of question-->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Any questions for your representative?">
+                    <div class="input-group-btn">
+                        <button class="btn btn-success" type="button"><i class="fa fa-send"></i>&nbsp;Send</button>
+                    </div>
+                </div>
+                <!-- end of question-->
+                <br/>
+                <ul class="sortable connectedSortable">
+                  <!-- start of action needed-->
+                  <li class="ui-state-default">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><b>Action Needed</b></div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-sm-8">Upload the signed POA please.</div>
+                            <div class="col-sm-4"><button type="=button" class="btn btn-success btn-xs pull-right"><i class="fa fa-check"></i>&nbsp;Mark Done</button>
+                            </div>
+                          </div>
+                          </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-sm-8">Give us a call ASAP : 312-555-999.</div>
+                            <div class="col-sm-4"><button type="=button" class="btn btn-success btn-xs pull-right"><i class="fa fa-check"></i>&nbsp;Mark Done</button>
+                            </div>
+                          </div>
+                          </li>
+                    </ul>
+                </div>
+              </li>
+              <!-- end of action needed-->
+              <!-- start of history-->
+              <li class="ui-state-default">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><b>History</b></div>
+                    <div class="panel-body">
+
+
+                        <div class="qa-message-list" id="wallmessages">
+                            <div class="message-item" id="m3">
+                                <div class="message-inner">
+                                    <div class="message-head clearfix">
+                                        <div class="avatar pull-left">
+                                            <a href=""><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h5 class="handle">Admin</h5>
+                                            <div class="post-meta">
+                                                <div class="asker-meta">
+                                                    <span class="qa-message-what"></span>
+                                                    <span class="qa-message-when">
+                                              <span class="qa-message-when-data">Oct 20, 2016</span>
+                                                    </span>
+                                                    <span class="qa-message-who">
+                                              <span class="qa-message-who-pad">by </span>
+                                                    <span class="qa-message-who-data"><a href="">admin</a></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qa-message-content">
+                                        Your case was transferred to attorney.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="message-item" id="m2">
+                                <div class="message-inner">
+                                    <div class="message-head clearfix">
+                                        <div class="avatar pull-left">
+                                            <a href=""><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h5 class="handle">Admin</h5>
+                                            <div class="post-meta">
+                                                <div class="asker-meta">
+                                                    <span class="qa-message-what"></span>
+                                                    <span class="qa-message-when">
+                                              <span class="qa-message-when-data">Oct 20, 2016</span>
+                                            </span>
+                                                    <span class="qa-message-who">
+                                              <span class="qa-message-who-pad">by </span>
+                                                    <span class="qa-message-who-data"><a href="">admin</a></span>  </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qa-message-content">
+                                          Your payment was received.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="message-item" id="m1">
+                                <div class="message-inner">
+                                    <div class="message-head clearfix">
+                                        <div class="avatar pull-left">
+
+                                            <a href=""><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h5 class="handle">Admin</h5>
+                                            <div class="post-meta">
+                                                <div class="asker-meta">
+                                                    <span class="qa-message-what"></span>
+                                                    <span class="qa-message-when">
+                                              <span class="qa-message-when-data">Oct 06, 2016</span>
+                                                    </span>
+                                                    <span class="qa-message-who">
+                                              <span class="qa-message-who-pad">by </span>
+                                                    <span class="qa-message-who-data"><a href="">admin</a></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qa-message-content">
+                                        Your document correction was done.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="message-item" id="m2">
+                                <div class="message-inner">
+                                    <div class="message-head clearfix">
+                                        <div class="avatar pull-left">
+                                            <a href=""><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h5 class="handle">Admin</h5>
+                                            <div class="post-meta">
+                                                <div class="asker-meta">
+                                                    <span class="qa-message-what"></span>
+                                                    <span class="qa-message-when">
+                                              <span class="qa-message-when-data">Sep 20, 2016</span>
+                                                    </span>
+                                                    <span class="qa-message-who">
+                                              <span class="qa-message-who-pad">by </span>
+                                                    <span class="qa-message-who-data"><a href="">admin</a></span>  </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qa-message-content">
+                                          Your payment was received.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="message-item" id="m2">
+                                <div class="message-inner">
+                                    <div class="message-head clearfix">
+                                        <div class="avatar pull-left">
+                                            <a href=""><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h5 class="handle">Admin</h5>
+                                            <div class="post-meta">
+                                                <div class="asker-meta">
+                                                    <span class="qa-message-what"></span>
+                                                    <span class="qa-message-when">
+                                              <span class="qa-message-when-data">Aug 20, 2016</span>
+                                                    </span>
+                                                    <span class="qa-message-who">
+                                              <span class="qa-message-who-pad">by </span>
+                                                    <span class="qa-message-who-data"><a href="">admin</a></span>  </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qa-message-content">
+                                          Your payment was received.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="message-item" id="m2">
+                                <div class="message-inner">
+                                    <div class="message-head clearfix">
+                                        <div class="avatar pull-left">
+                                            <a href=""><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h5 class="handle">Admin</h5>
+                                            <div class="post-meta">
+                                                <div class="asker-meta">
+                                                    <span class="qa-message-what"></span>
+                                                    <span class="qa-message-when">
+                                              <span class="qa-message-when-data">Aug 03, 2016</span>
+                                                    </span>
+                                                    <span class="qa-message-who">
+                                              <span class="qa-message-who-pad">by </span>
+                                                    <span class="qa-message-who-data"><a href="">admin</a></span>  </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="qa-message-content">
+                                          Our team is working on your case.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+              </li>
+              <!-- end of history-->
+            </ul>
+            </div>
+            <!-- right container-->
+            <div class="col-md-3 col-md-12">
+              <ul class="sortable connectedSortable">
+                <!-- start of contact-->
+                <li class="ui-state-default">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><b>Contact</b><button type="=button" class="btn btn-primary btn-xs pull-right"><i id="edit" class="fa fa-edit"></i><i id="save" style="display:none" class="fa fa-check"></i></button></div>
+                    <div class="panel-body">
+                      <div class="row">
+                          <div class="col col-xs-4"><b>Phone</b>
+                          </div>
+                          <div class="col col-xs-8"><input type="text" class="form-control" id="txtphone" value="" style="display:none"/><span id="phone">(312)555-888</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col col-xs-4"><b>Fax</b>
+                          </div>
+                          <div class="col col-xs-8"><input type="text" class="form-control" id="txtfax" value="" style="display:none"/><span id="fax">(312)555-888</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col col-xs-4"><b>Address</b>
+                          </div>
+                          <div class="col col-xs-8"><input type="text" class="form-control" id="txtaddress" value="" style="display:none"/><span id="address">1234 N Michigan Ave. Chicago, IL 60611</span>
+                          </div>
+                      </div>
+
+                    </div>
+                    <!--<div class="panel-footer">
+                        <button type="=button" class="btn btn-success btn-xs"><i class="fa fa-edit"></i>&nbsp;Edit</button>
+                    </div>-->
+                </div>
+              </li>
+              <!-- end of contact-->
+              <!-- start of media-->
+              <li class="ui-state-default">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><b>Media</b></div>
+                    <div class="panel-body">
+                        <p>How to do xyz? <a href=""><i class="fa fa-play pull-right" style="color:red"></i></a></p>
+                        <p>How to prepare ABC? <a href=""><i class="fa fa-arrow-down pull-right" style="color:green"></i></a></p>
+                    </div>
+                </div>
+              </li>
+              <!-- end of media-->
+            </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <nav class="nav footer navbar-static-bottom" style="background:#e6e6e6;">
+          <div class="container-fluid">
+            footer
+          </div>
+        </nav>
+    </footer>
+		</body>
+
+    <script>
+    $(function() {
+      $( ".sortable" ).sortable({
+        connectWith: "ul",
+        dropOnEmpty:true,
+        appendTo:'body'
+      }).disableSelection();
+
+      $("#edit").click(function() {
+        $("#edit").hide();
+        $("#phone").hide();
+        $("#fax").hide();
+        $("#address").hide();
+        $("#save").show();
+        $("#txtphone").show();
+        $("#txtfax").show();
+        $("#txtaddress").show();
+        $("#txtaddress").val($("#address").text());
+        $("#txtphone").val($("#phone").text());
+        $("#txtfax").val($("#fax").text());
+      });
+      $("#save").click(function() {
+        $("#edit").show();
+        $("#phone").show();
+        $("#fax").show();
+        $("#address").show();
+        $("#save").hide();
+        $("#txtphone").hide();
+        $("#txtfax").hide();
+        $("#txtaddress").hide();
+      });
+    });
+    </script>
+
+</html>
