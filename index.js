@@ -1,31 +1,25 @@
-$(function() {
-  $( ".sortable" ).sortable({
-    connectWith: "ul",
-    dropOnEmpty:true,
-    appendTo:'body'
-  }).disableSelection();
+(function() {
+  angular
+    .module("contact", [])
+    .controller('contactCtrl', function($scope) {
+    $scope.editMode = false;
+    $scope.btnClass='fa fa-edit';
+    $scope.buttonText="edit";
+    $scope.phone = "(312)555-888";
+    $scope.fax = "(312)555-888";
+    $scope.address = "1234 N Michigan Ave. Chicago, IL 60611";
 
-  $("#edit").click(function() {
-    $("#edit").hide();
-    $("#phone").hide();
-    $("#fax").hide();
-    $("#address").hide();
-    $("#save").show();
-    $("#txtphone").show();
-    $("#txtfax").show();
-    $("#txtaddress").show();
-    $("#txtaddress").val($("#address").text());
-    $("#txtphone").val($("#phone").text());
-    $("#txtfax").val($("#fax").text());
-  });
-  $("#save").click(function() {
-    $("#edit").show();
-    $("#phone").show();
-    $("#fax").show();
-    $("#address").show();
-    $("#save").hide();
-    $("#txtphone").hide();
-    $("#txtfax").hide();
-    $("#txtaddress").hide();
-  });
-});
+    $scope.editSave = function(evt) {
+      if ($scope.buttonText == "edit") {
+        $scope.editMode=true;
+        $scope.btnClass='fa fa-check';
+        $scope.buttonText="save";
+      }
+      else{
+        $scope.editMode = false;
+        $scope.btnClass='fa fa-edit';
+        $scope.buttonText="edit";
+      }
+    };
+    });
+})();

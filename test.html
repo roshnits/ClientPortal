@@ -8,6 +8,8 @@
 
     <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
 
     <style>
     .sortable {
@@ -384,32 +386,30 @@
               <ul class="sortable connectedSortable">
                 <!-- start of contact-->
                 <li class="ui-state-default">
-                <div class="panel panel-primary">
-                    <div class="panel-heading"><b>Contact</b><button type="=button" class="btn btn-primary btn-xs pull-right"><i id="edit" class="fa fa-edit"></i><i id="save" style="display:none" class="fa fa-check"></i></button></div>
+                <div class="panel panel-primary" ng-app="contact" ng-controller="contactCtrl">
+                  <div class="panel-heading"><b>Contact</b>
+                      <button type="button" class="btn btn-success btn-xs pull-right" ng-click="editSave($event)"><i ng-class="btnClass"></i></button>
+                    </div>
                     <div class="panel-body">
                       <div class="row">
                           <div class="col col-xs-4"><b>Phone</b>
                           </div>
-                          <div class="col col-xs-8"><input type="text" class="form-control" id="txtphone" value="" style="display:none"/><span id="phone">(312)555-888</span>
+                          <div class="col col-xs-8"><span id="phone" ng-hide="editMode">{{phone}}</span><input class="form-control" ng-show="editMode" ng-model="phone" style="height:30px;"/>
                           </div>
                       </div>
                       <div class="row">
                           <div class="col col-xs-4"><b>Fax</b>
                           </div>
-                          <div class="col col-xs-8"><input type="text" class="form-control" id="txtfax" value="" style="display:none"/><span id="fax">(312)555-888</span>
+                          <div class="col col-xs-8"><span id="fax" ng-hide="editMode">{{fax}}</span><input class="form-control" ng-show="editMode" ng-model="fax" style="height:30px;"/>
                           </div>
                       </div>
                       <div class="row">
                           <div class="col col-xs-4"><b>Address</b>
                           </div>
-                          <div class="col col-xs-8"><input type="text" class="form-control" id="txtaddress" value="" style="display:none"/><span id="address">1234 N Michigan Ave. Chicago, IL 60611</span>
+                          <div class="col col-xs-8"><span id="address" ng-hide="editMode">{{address}}</span><input class="form-control" ng-show="editMode" ng-model="address" style="height:30px;"/>
                           </div>
                       </div>
-
                     </div>
-                    <!--<div class="panel-footer">
-                        <button type="=button" class="btn btn-success btn-xs"><i class="fa fa-edit"></i>&nbsp;Edit</button>
-                    </div>-->
                 </div>
               </li>
               <!-- end of contact-->
