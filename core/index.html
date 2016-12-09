@@ -10,8 +10,7 @@
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="/bower_components/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
         <script src="/bower_components/AdminLTE/dist/js/app.min.js"></script>
-        <script src="/bower_components/AdminLTE/dist/js/demo.js"></script>
-        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="/resources/js/index.js"></script>
         <style>
             #actiontodolist li {
@@ -21,15 +20,18 @@
             .completetask {
                 text-decoration: line-through;
             }
+            .skin-blue .main-header .logo {
+                background: none;
+            }
         </style>
     </head>
-    <body class="skin-blue sidebar-mini">
+    <body class="skin-blue">
         <div class="wrapper">
             <header class="main-header">
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" style="margin-left:0;">
                     <!-- Logo -->
-                    <a href="#" class="logo">
+                    <a href="#" class="logo" >
                         <span class="logo-lg">
                             <span class="fa fa-picture-o"></span>&nbsp;<b>FastTax Portal</b>
                         </span>
@@ -250,7 +252,7 @@
                                         <div class="direct-chat-msg right">
                                             <div class="direct-chat-info clearfix">
                                                 <span class="direct-chat-name pull-right">Sarah</span>
-                                                <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                                                <span class="direct-chat-timestamp pull-left">24 Jan 10:23 am</span>
                                             </div>
                                             <!-- /.direct-chat-info -->
                                             <img class="direct-chat-img" src="/bower_components/AdminLTE/dist/img/avatar3.png" alt="message user image">
@@ -265,13 +267,16 @@
                                         <div class="direct-chat-msg">
                                             <div class="direct-chat-info clearfix">
                                                 <span class="direct-chat-name pull-left">Peter</span>
-                                                <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                                                <span class="direct-chat-timestamp pull-right">24 Jan 11:05 am</span>
                                             </div>
                                             <!-- /.direct-chat-info -->
                                             <img class="direct-chat-img" src="/bower_components/AdminLTE/dist/img/avatar.png" alt="">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
                                                 Yes we keep all your information discrete
+                                            </div>
+                                            <div class="direct-chat-info clearfix">
+                                                <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                             </div>
                                             <div class="direct-chat-text">
                                                 Please send me your latest contact email id please
