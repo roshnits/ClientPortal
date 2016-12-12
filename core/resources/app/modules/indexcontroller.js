@@ -54,28 +54,28 @@ define(['logicsclientportal', 'moment', 'numeral', 'lodash', 'is'], function(log
             sc.queries = [{
                 queryid: 1,
                 queryusername: "Peter",
-                imagepath: "/bower_components/AdminLTE/dist/img/avatar.png",
+                imagepath: "/clientportal/core/bower_components/AdminLTE/dist/img/avatar.png",
                 querytime: moment("2015-10-20 15:30", "YYYY-MM-DD HH:mm").toDate(),
                 querymessage: "Welcome to Fast Tax, I am Peter, your representative, If you require any information, feel free to contact me here",
                 isclient: false
             }, {
                 queryid: 2,
                 queryusername: "Sarah",
-                imagepath: "/bower_components/AdminLTE/dist/img/avatar3.png",
+                imagepath: "/clientportal/core/bower_components/AdminLTE/dist/img/avatar3.png",
                 querytime: moment("2015-10-21 10:42", "YYYY-MM-DD HH:mm").toDate(),
                 querymessage: "Is the information i am sharing kept secrate?",
                 isclient: true
             }, {
                 queryid: 3,
                 queryusername: "Peter",
-                imagepath: "/bower_components/AdminLTE/dist/img/avatar.png",
+                imagepath: "/clientportal/core/bower_components/AdminLTE/dist/img/avatar.png",
                 querytime: moment("2015-10-21 11:30", "YYYY-MM-DD HH:mm").toDate(),
                 querymessage: "Yes we keep all your information encrypted and safe",
                 isclient: false
             }, {
                 queryid: 4,
                 queryusername: "Peter",
-                imagepath: "/bower_components/AdminLTE/dist/img/avatar.png",
+                imagepath: "/clientportal/core/bower_components/AdminLTE/dist/img/avatar.png",
                 querytime: moment("2015-10-21 16:22", "YYYY-MM-DD HH:mm").toDate(),
                 querymessage: "Please send me your latest contact email id please",
                 isclient: false

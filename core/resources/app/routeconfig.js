@@ -4,12 +4,12 @@ define(['angularAMD'], function(angularAMD) {
             abstract: true,
             views: {
                 '@': angularAMD.route({
-                    templateUrl: '/resources/app/layout/layout.html',
+                    templateUrl: '/clientportal/core/resources/app/layout/layout.html',
                     //controller: 'layoutcontroller',
                     //controllerUrl: 'layoutcontroller'
                 }),
                 'top@layout': angularAMD.route({
-                    templateUrl: '/resources/app/layout/topmenu/topmenu.html',
+                    templateUrl: '/clientportal/core/resources/app/layout/topmenu/topmenu.html',
                     //controller: 'topmenucontroller',
                     //controllerUrl: 'topmenucontroller'
                 }),
@@ -20,7 +20,7 @@ define(['angularAMD'], function(angularAMD) {
             url: '/',
             views: {
                 'content@layout': angularAMD.route({
-                    templateUrl: '/resources/app/modules/index.html',
+                    templateUrl: '/clientportal/core/resources/app/modules/index.html',
                     controller: 'indexcontroller',
                     controllerUrl: 'indexcontroller'
                 }),

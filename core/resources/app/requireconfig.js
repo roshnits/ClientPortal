@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: '/',
+    baseUrl: '/clientportal/core/',
     packages: [{
         name: 'moment',
         // This location is relative to baseUrl. Choose bower_components
