@@ -58,20 +58,28 @@
             <div class="box-body">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h5 class="box-title"><b>Upcoming Payments</b></h5>
+                        <h5 class="box-title">
+                            <b>Upcoming Payments</b>
+                        </h5>
                     </div>
                 </div>
                 <div class="row" data-ng-repeat="payment in scheduledpayments.upcomingpayments">
-                    <b><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-ng-bind="commonfactory.formatdate(payment.paymentdate)"></div></b>
+                    <b>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-ng-bind="commonfactory.formatdate(payment.paymentdate)"></div>
+                    </b>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-ng-bind="commonfactory.formatcurrency(payment.paymentamount, '$')"></div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h5 class="box-title"><b>Past Payments</h5></b>
+                        <h5 class="box-title">
+                            <b>Past Payments</h5>
+                        </b>
                     </div>
                 </div>
                 <div class="row" data-ng-repeat="payment in scheduledpayments.pastpayments">
-                    <b><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-ng-bind="commonfactory.formatdate(payment.paymentdate)"></div></b>
+                    <b>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-ng-bind="commonfactory.formatdate(payment.paymentdate)"></div>
+                    </b>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-ng-bind="commonfactory.formatcurrency(payment.paymentamount, '$')"></div>
                 </div>
             </div>
@@ -155,15 +163,21 @@
             <div class="box-footer no-padding">
                 <ul class="todo-list ui-sortable" id="actiontodolist">
                     <li style="border-left:none;" data-ng-repeat="action in actions | orderBy: 'actioninitiateddate'">
-                        <span data-ng-class="action.iscompleted ? 'completetask' : ''" class="text" data-ng-bind="action.action"></span>
-                        <!-- Emphasis label -->
-                        <small data-ng-if="!action.iscompleted" class="label label-danger">
-                            <i class="fa fa-clock-o"></i>&nbsp;Pending since&nbsp;<span data-ng-bind="commonfactory.datesince(action.actioninitiateddate)"></span>
-                        </small>
-                        <!-- General tools such as edit or delete-->
-                        <button type="button" data-ng-if="!action.iscompleted" class="btn btn-success btn-xs pull-right">
-                            <i class="fa fa-check"></i>&nbsp;Mark Done
-                        </button>
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-6 col-xs-6">
+                                <span data-ng-class="action.iscompleted ? 'completetask' : ''" class="text" data-ng-bind="action.action"></span>
+                                <!-- Emphasis label -->
+                                <span data-ng-if="!action.iscompleted" class="label label-danger">
+                                    <i class="fa fa-clock-o"></i>&nbsp;Pending since&nbsp;<span data-ng-bind="commonfactory.datesince(action.actioninitiateddate)"></span>
+                                </span>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                                <!-- General tools such as edit or delete-->
+                                <button type="button" data-ng-if="!action.iscompleted" class="btn btn-block btn-success btn-xs">
+                                    <i class="fa fa-check"></i>&nbsp;Mark Done
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
