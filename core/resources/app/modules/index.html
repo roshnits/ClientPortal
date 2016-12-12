@@ -1,0 +1,413 @@
+<style>
+    #actiontodolist li {
+        background: none;
+        border-bottom: 1px solid #f4f4f4;
+    }
+    .completetask {
+        text-decoration: line-through;
+    }
+    .skin-blue .main-header .logo {
+        background: none;
+    }
+</style>
+<div class="row">
+    <div class="col-sm-3 col-md-3">
+        <div class="box box-info color-palette-box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Billing Summary</h3>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col col-sm-6">
+                        <b>Total Billed</b>
+                    </div>
+                    <div class="col col-sm-6">$1600.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <b>Paid</b>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$1000.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <b>Balance</b>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$600.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <b>Due</b>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$0.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="box box-info color-palette-box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Next Scheduled Payment</h3>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">11/20/2016</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$200.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h5 class="box-title">Past Payments</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">11/20/2016</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$200.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">11/20/2016</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$200.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">11/20/2016</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$200.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">11/20/2016</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$200.00</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">11/20/2016</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">$200.00</div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <button type="=button" class="btn btn-success btn-xs">
+                    <span class="fa fa-credit-card"></span>&nbsp;Payment Method</button>
+            </div>
+        </div>
+        <div class="box box-info color-palette-box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Documents</h3>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;Doc 1
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;Doc 2
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;Doc 3
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <button type="=button" class="btn btn-success btn-xs">
+                    <i class="fa fa-upload"></i>&nbsp;Upload</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-6">
+        <!--<div class="input-group">
+<input class="form-control" placeholder="Any questions for your representative?">
+<div class="input-group-btn">
+<button type="button" class="btn btn-success btn-flat"><i class="fa fa-send"></i>&nbsp;Send</button>
+</div>
+</div>-->
+        <div class="box box-info direct-chat direct-chat-warning">
+            <div class="box-header with-border">
+                <h3 class="box-title">Any Queries</h3>
+                <div class="box-tools pull-right">
+                    <!--<span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>-->
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <!--<button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
+  <i class="fa fa-comments"></i></button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+</button>-->
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <!-- Conversations are loaded here -->
+                <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                        <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-left">Peter</span>
+                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="/bower_components/AdminLTE/dist/img/avatar.png" alt="">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                            Welcome to Fast Tax, I am Peter, your representative, If you require any information, feel free to contact me here
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                        <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-right">Sarah</span>
+                            <span class="direct-chat-timestamp pull-left">24 Jan 10:23 am</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="/bower_components/AdminLTE/dist/img/avatar3.png" alt="message user image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                            Is the information i am sharing kept secrate?
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                        <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-left">Peter</span>
+                            <span class="direct-chat-timestamp pull-right">24 Jan 11:05 am</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img class="direct-chat-img" src="/bower_components/AdminLTE/dist/img/avatar.png" alt="">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                            Yes we keep all your information discrete
+                        </div>
+                        <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="direct-chat-text">
+                            Please send me your latest contact email id please
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <input type="text" name="message" placeholder="Any questions for your representative?" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-success btn-flat">
+                                <i class="fa fa-send"></i>&nbsp;Send</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="box box-solid box-info color-palette-box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Action Needed</h3>
+            </div>
+            <div class="box-footer no-padding">
+                <ul class="todo-list ui-sortable" id="actiontodolist">
+                    <li >
+                        <span class="text">Design a nice theme</span>
+                        <!-- Emphasis label -->
+                        <small class="label label-danger">
+                            <i class="fa fa-clock-o"></i>
+                            Pending since 2 mins</small>
+                        <!-- General tools such as edit or delete-->
+                        <button type="button" class="btn btn-success btn-xs pull-right">
+                            <i class="fa fa-check"></i>&nbsp;Mark Done
+                        </button>
+                    </li>
+                    <li>
+                        <span class="text">Make the theme responsive</span>
+                        <small class="label label-danger">
+                            <i class="fa fa-clock-o"></i>
+                            Pending since 4 hours</small>
+                        <button type="button" class="btn btn-success btn-xs pull-right">
+                            <i class="fa fa-check"></i>&nbsp;Mark Done
+                        </button>
+                    </li>
+                    <li>
+                        <span class="text completetask">Let theme shine like a star</span>
+                        <small class="label label-success">
+                            <i class="fa fa-clock-o"></i>
+                            Completed 1 day ago</small>
+                    </li>
+                    <li>
+                        <span class="text">Check your messages and notifications</span>
+                        <small class="label label-danger">
+                            <i class="fa fa-clock-o"></i>
+                            Pending since 1 week</small>
+                        <button type="button" class="btn btn-success btn-xs pull-right">
+                            <i class="fa fa-check"></i>&nbsp;Mark Done
+                        </button>
+                    </li>
+                    <li>
+                        <span class="text completetask">Let theme shine like a star
+                        </span>
+                        <small class="label label-success">
+                            <i class="fa fa-clock-o"></i>
+                            Complete 1 month ago</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box-info color-palette-box">
+            <div class="box-header with-border">
+                <h3 class="box-title">History</h3>
+                <div class="box-tools pull-right">
+                    <!--<span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>-->
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <!--<button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
+<i class="fa fa-comments"></i></button>
+<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+</button>-->
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- The time line -->
+                        <ul class="timeline">
+                            <!-- timeline time label -->
+                            <li class="time-label">
+                                <span class="bg-yellow">20 Oct, 2016</span>
+                            </li>
+                            <!-- /.timeline-label -->
+                            <!-- timeline item -->
+                            <li>
+                                <i class="fa fa-credit-card bg-blue"></i>
+                                <div class="timeline-item">
+                                    <span class="time">
+                                        <i class="fa fa-clock-o"></i>
+                                        01:15</span>
+                                    <!--<h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>-->
+                                    <div class="timeline-body">Your payment was received.</div>
+                                    <!--<div class="timeline-footer">
+              <a class="btn btn-primary btn-xs">Read more</a>
+              <a class="btn btn-danger btn-xs">Delete</a>section
+            </div>-->
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                            <!-- timeline item -->
+                            <li>
+                                <i class="fa fa-check bg-green"></i>
+                                <div class="timeline-item">
+                                    <span class="time">
+                                        <i class="fa fa-clock-o"></i>
+                                        12:00</span>
+                                    <div class="timeline-body">Your document correction was done.
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                            <!-- timeline item -->
+                            <li>
+                                <i class="fa fa-comments bg-red"></i>
+                                <div class="timeline-item">
+                                    <span class="time">
+                                        <i class="fa fa-clock-o"></i>
+                                        10:00</span>
+                                    <div class="timeline-body">
+                                        Our team is working on your case.
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- END timeline item -->
+                            <!-- timeline time label -->
+                            <li class="time-label">
+                                <span class="bg-yellow">
+                                    08 Oct. 2016
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-credit-card bg-blue"></i>
+                                <div class="timeline-item">
+                                    <span class="time">
+                                        <i class="fa fa-clock-o"></i>
+                                        12:15</span>
+                                    <div class="timeline-body">
+                                        Your payment was received.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-check bg-green"></i>
+                                <div class="timeline-item">
+                                    <span class="time">
+                                        <i class="fa fa-clock-o"></i>
+                                        10:20</span>
+                                    <div class="timeline-body">
+                                        Your document correction was done.
+                                    </div>
+                                </div>
+                                <!-- END timeline item -->
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o bg-gray"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-md-3" ng-app="contact">
+        <div class="box box-info color-palette-box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Contact</h3>
+                <div class="pull-right box-tools">
+                    <button type="button" class="btn btn-info btn-xs" ng-click="editSave($event)">
+                        <i ng-class="btnClass"></i>
+                    </button>
+                </button>
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <b>Phone</b>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">(312)555-888
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <b>Fax</b>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">(312)555-888
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <b>Address</b>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">1234 N Michigan Ave. Chicago, IL 60611
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box box-info color-palette-box">
+        <div class="box-header with-border">
+            <h3 class="box-title">Media</h3>
+        </div>
+        <div class="box-body">
+            <div class="row">
+                <div class="col-xs-12">How to do xyz?
+                    <a href="">
+                        <i class="fa fa-play pull-right" style="color:red"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">How to prepare ABC?
+                    <a href="">
+                        <i class="fa fa-arrow-down pull-right" style="color:green"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

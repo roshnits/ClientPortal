@@ -1,25 +1,29 @@
 {
-  "name": "clientportal",
-  "authors": [
-    "roshnits <roshni@logics.com>"
-  ],
-  "description": "Client portal for irslogics",
-  "main": "index.html",
-  "license": "MIT",
-  "homepage": "",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "font-awsome#^4.7.0",
-    "bootswatch": "https://github.com/thomaspark/bootswatch.git#^3.3.7",
-    "AdminLTE": "admin-lte#^2.3.8",
-    "angular": "^1.6.0"
-  }
+    "name": "clientportal",
+    "authors": [
+        "roshnits <roshni@logics.com>"
+    ],
+    "description": "Client portal for irslogics",
+    "main": "index.html",
+    "license": "MIT",
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootswatch": "https://github.com/thomaspark/bootswatch.git#^3.3.7",
+        "angular": "^1.6.0",
+        "angular-ui-router": "^0.3.1",
+        "bootstrap": "^3.3.7",
+        "font-awesome": "^4.7.0",
+        "requirejs": "^2.3.2",
+        "jquery": "^3.1.1",
+        "angularAMD": "^0.2.1",
+        "AdminLTE": "admin-lte#^2.3.6"
+    }
 }
