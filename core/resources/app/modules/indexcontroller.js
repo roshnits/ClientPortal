@@ -182,7 +182,6 @@ define(['logicsclientportal', 'moment', 'numeral', 'lodash', 'is'], function(log
                 return mediaicon;
             }
             sc.historytype = function(history) {
-                console.log(history.historytypeid);
                 switch (history.historytypeid) {
                     case 1:
                         history.icon = "fa-credit-card";
