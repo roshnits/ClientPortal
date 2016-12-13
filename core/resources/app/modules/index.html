@@ -163,11 +163,11 @@
             <div class="box-footer no-padding">
                 <ul class="todo-list ui-sortable" id="actiontodolist">
                     <li style="border-left:none;" data-ng-repeat="action in actions | orderBy: 'actioninitiateddate'">
-                        <div class="row">
+                        <div class="row" style="margin: 0">
                             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                                 <span data-ng-class="action.iscompleted ? 'completetask' : ''" class="text" data-ng-bind="action.action"></span>
                                 <!-- Emphasis label -->
-                                <span data-ng-if="!action.iscompleted" class="label label-danger">
+                                <span data-ng-if="!action.iscompleted" class="label label-danger hidden-xs hidden-sm">
                                     <i class="fa fa-clock-o"></i>&nbsp;Pending since&nbsp;<span data-ng-bind="commonfactory.datesince(action.actioninitiateddate)"></span>
                                 </span>
                             </div>
